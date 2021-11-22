@@ -2,11 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* color:white; */
-    /* background-color :rgb(36, 36, 34); */
-    /* background-color: rgba(69, 86, 125, 1); */
-    /* color: white; */
-
 }
 
 body, main, footer, nav{
@@ -37,17 +32,17 @@ nav > div > img{
     display: flex;
     list-style-type: none;
     align-items: center;
-    gap: 25px;
+    gap: 50px;
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding-right: 20px;    
+    font-weight: 300;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 nav a:hover{
@@ -60,23 +55,17 @@ nav a:hover{
     position: relative;
     display: flex;
     flex-direction: row;
-    /* gap:5px; */
     width:100%;
     min-height:700px;
     background-color :rgb(36, 36, 34);
     justify-content: center;
     text-align: center;
     align-items: center;
-    
-    /* background-image: url(./PharyAtOperaHouseCut.jpg); */
-    /* background-size: 50%; */
     background-position:center center;
     background-attachment: fixed;
     background-size: cover !important;
     background-repeat: no-repeat;
     overflow: hidden;
-    
-    
 }
 
 .mypic-div{
@@ -84,17 +73,15 @@ nav a:hover{
     align-items: flex-end;
 }
 
-
 .section1 div img{
-    width:80%;
-    max-width: 360px;
+    width:100%;
+    min-width: 250px;
     border-radius: 50%;
 
-}
-        
+}   
 
 h1{
-    font-size:4.5rem;
+    font-size:3.5rem;
     color: white;
 }
 
@@ -109,12 +96,9 @@ h1{
     position: relative;
     display: block;
     min-height:200px;
-    background-color:rgb(7, 34, 68);
+    background-color:rgb(36, 36, 133);
     text-align: center;   
-    /* margin-top: 0; */
 }
-
-
 
 .sect2-content{
     padding-top: 4rem;
@@ -125,42 +109,9 @@ h1{
     vertical-align: center;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 3rem;
     color:white;
     text-transform: uppercase;
-    l
 }
-
-.sect2-content h3{
-    font-size: 2rem;
-    line-height: 70px;
-}
-
-
-.section3{
-    display: grid;
-    background-color:rgb(7, 34, 68);
-    grid-template-columns: repeat(auto-fit,minmax(360px,2fr));
-    gap: 2rem;
-    text-align: center;
-    justify-content: space-around;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-bottom: 4rem;
-    margin-right: auto;
-    margin-left: auto;
- 
-}
-
-.pic{
-    margin:0.5rem;
-}
-
-
-.heading2{
-    grid-area: cell1;
-    position: relative ;
-    }
 
 .sect2-content h3{
     color: white;
@@ -172,21 +123,39 @@ h1{
     position:relative;
     height: 100%;
     margin-top:40px;
-    font-size: 3rem;
+    font-size: 1.8rem;
     outline-style: solid;
     outline-color: white;
     outline-width: 2px;
-    color: yellow;
+    color: white;
     font-weight: 300;
+    line-height: 35px;
 }
+
+.section3{
+    display: grid;
+    background-color:rgb(36, 36, 133);
+    grid-template-columns: repeat(auto-fit,minmax(300px,2fr));
+    gap: 2rem;
+    text-align: center;
+    justify-content: space-around;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heading2{
+    grid-area: cell1;
+    position: relative ;
+    }
 
 .section3 img{
     display: block;
     height: auto;
     width: 100%;
     object-fit: cover;
-    margin-right:auto;
-    margin-left: auto;
 }
 
 
@@ -195,16 +164,14 @@ h1{
     color: white;
     padding: 13px;
     font-size: 1.3rem;
+    width: 100%;
 }
 
 .section4{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color:rgb(11, 20, 27); */
     height:200px;    
-
-
     background-position:center center;
     background-attachment: fixed;
     background-size: cover !important;
@@ -228,7 +195,8 @@ h1{
 footer{
     position:relative;
     height: 50px;
-    background-color:rgb(7, 34, 68);
+    /* background-color:rgb(7, 34, 68); */
+    background-color:rgb(36, 36, 133);
 }
 
 footer p{
@@ -259,6 +227,14 @@ footer p{
 
 /* For tablets */
 @media screen and (min-width:481px) and (max-width:1024px){
+    .flex{
+        gap:25px;
+    }
+
+    .section1 div img{
+        width:90%;
+    }
+
     nav a{
         font-size: 1rem;
     }
@@ -304,11 +280,22 @@ footer p{
         font-size: 0.8rem;
     }
 
+    .button{
+        font-size: 1.5rem;
+    }
+
 
 }
 
 /* for phone  */
 @media screen and (max-width:480px){
+    .flex{
+        gap:15px;
+    }
+    .section1 div img{
+        width:90%;
+    }
+
     nav a{
         font-size: 0.7rem;
     }
@@ -338,10 +325,10 @@ footer p{
 
 
     .sect2-content h3{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 35px;
-        width: 90%;
-        padding:0.8rem;
+        width: 80%;
+        padding:0.6rem 1.2rem;
         outline-width: 2px;
         text-transform: uppercase;
     }
@@ -352,9 +339,11 @@ footer p{
     }
 
     footer p{
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
-    
+    .button{
+        font-size: 1rem;
+    }
 
 }
