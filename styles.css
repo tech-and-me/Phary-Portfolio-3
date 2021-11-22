@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    text-align: center;
+}
+
 body, main, footer, nav{
     position: relative;
     margin: 0;
@@ -100,7 +105,7 @@ h1{
     position: relative;
     display: block;
     min-height:200px;
-    background-color:rgb(36, 36, 133);
+    background-color:rgb(31, 51, 119);
     text-align: center;   
 }
 
@@ -123,7 +128,7 @@ h1{
     margin-bottom: 2rem;
     margin-left: 50%;
     transform: translateX(-50%);
-    padding: 0.8rem 2.5rem;
+    padding: 0.8rem 2rem;
     position:relative;
     height: 100%;
     margin-top:40px;
@@ -138,8 +143,8 @@ h1{
 
 .section3{
     display: grid;
-    background-color:rgb(36, 36, 133);
-    grid-template-columns: repeat(auto-fit,minmax(300px,2fr));
+    background-color:rgb(31, 51, 119);
+    grid-template-columns: repeat(auto-fit,minmax(400px,2fr));
     gap: 2rem;
     text-align: center;
     justify-content: space-around;
@@ -160,15 +165,41 @@ h1{
     height: auto;
     width: 100%;
     object-fit: cover;
+    
 }
 
 
 .caption{
-    background-color:rgb(19, 130, 145);
-    color: white;
-    padding: 13px;
-    font-size: 1.3rem;
+    background-color :rgb(24, 23, 19);
+    padding: 0.4rem 0.2rem;
+    font-size: 1rem;
     width: 100%;
+    line-height: 2rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    outline-style: solid;
+    outline-color: rgb(133, 120, 120);
+    outline-width: 0.5px;
+    border-radius: 5px;
+}
+
+.caption button{
+    width: 100px;
+    height: 25px;
+    margin: 0.1rem;
+    border-radius: 5px;
+    background-color :rgb(53, 50, 12);
+}
+
+.caption button:hover{
+    background-color :rgb(100, 98, 56);
+}
+
+.caption button a{
+    color:white;
+    font-size: 0.7rem;
 }
 
 .section4{
@@ -194,6 +225,10 @@ h1{
     border-radius: 5px;
     text-decoration: none;
 } 
+
+.button:hover{
+    background-color :rgb(238, 229, 174);
+}
 
 
 footer{
@@ -293,6 +328,10 @@ footer p{
 
 /* for phone  */
 @media screen and (max-width:480px){
+    .section3{
+        grid-template-columns: repeat(auto-fit,minmax(300px,2fr));
+    }
+
     .flex{
         gap:15px;
     }
@@ -321,8 +360,6 @@ footer p{
         font-size: 2rem;
     }
 
-
-    
     .section1, .section4{
         background-image: url(./img/bg4.jfif)!important;
     }
