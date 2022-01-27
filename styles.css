@@ -144,7 +144,7 @@ h1{
 .section3{
     display: grid;
     background-color:rgb(31, 51, 119);
-    grid-template-columns: repeat(auto-fit,minmax(400px,2fr));
+    grid-template-columns: repeat(auto-fit,minmax(450px,2fr));
     gap: 2rem;
     text-align: center;
     justify-content: space-around;
@@ -326,7 +326,7 @@ footer p{
 /* for phone  */
 @media screen and (max-width:480px){
     .section3{
-        grid-template-columns: repeat(auto-fit,minmax(300px,2fr));
+        grid-template-columns: repeat(auto-fit,minmax(350fr,2fr));
     }
 
     .flex{
